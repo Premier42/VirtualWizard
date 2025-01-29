@@ -1,0 +1,158 @@
+{
+  "start": {
+    "id": "start",
+    "title": "The Reincarnated Apprentice",
+    "description": "You awaken in the ruins of Arcarium Academy, memories of a past life flickering in your mind. The air is thick with the scent of damp stone and decay. Something stirs in the darkness, watching.",
+    "choices": [
+      {
+        "text": "Explore the ruins",
+        "next": "forbidden_archives"
+      },
+      {
+        "text": "Search for a weapon",
+        "next": "battle_specter"
+      }
+    ]
+  },
+  "forbidden_archives": {
+    "id": "forbidden_archives",
+    "title": "The Forbidden Archives",
+    "description": "You push open a massive, dust-covered door, revealing a library untouched by time. Arcane symbols flicker in eerie blue light along the towering bookshelves. A deep, guttural voice echoes from the shadows.\n\n\"Who dares trespass in the domain of secrets?\" A spectral figure shrouded in tattered robes emerges, its hollow eyes burning with ghostly fire.",
+    "combat": {
+      "enemy": "Warden of Secrets",
+      "reward": {
+        "item": "Shadowbinding Spell",
+        "gold": 50
+      }
+    },
+    "choices": [
+      {
+        "text": "Study forbidden spells",
+        "next": "cursed_village"
+      },
+      {
+        "text": "Look for elemental magic",
+        "next": "cursed_village"
+      }
+    ]
+  },
+  "battle_specter": {
+    "id": "battle_specter",
+    "title": "Battle with a Specter",
+    "description": "As you step cautiously through the ruins, an icy wind rushes past you. A ghostly figure materializes, its skeletal grin stretching unnaturally. \n\n\"Flesh... after all these years...\" the specter hisses before lunging at you!",
+    "combat": {
+      "enemy": "Ancient Specter",
+      "reward": {
+        "item": "Silver Dagger",
+        "gold": 30
+      }
+    },
+    "choices": [
+      {
+        "text": "Press forward",
+        "next": "cursed_village"
+      }
+    ]
+  },
+  "cursed_village": {
+    "id": "cursed_village",
+    "title": "The Cursed Village",
+    "description": "The mist rolls over your feet as you step into the eerie silence of a desolate village. Shadows shift behind broken windows. A distant, haunting whisper carries on the wind. \n\n\"You shouldn't be here...\"",
+    "choices": [
+      {
+        "text": "Investigate the village",
+        "next": "necromancer_fight"
+      },
+      {
+        "text": "Seek shelter in an abandoned house",
+        "next": "mystic_merchant"
+      }
+    ]
+  },
+  "necromancer_fight": {
+    "id": "necromancer_fight",
+    "title": "Necromancer\u2019s Ambush",
+    "description": "A hooded figure steps forward, skeletal hands raised in incantation. \n\n\"The dead serve me. Soon, you shall too!\" he cackles as bones claw their way out of the earth, forming a macabre army.",
+    "combat": {
+      "enemy": "Dark Necromancer",
+      "reward": {
+        "item": "Flameburst Spell",
+        "gold": 70
+      }
+    },
+    "choices": [
+      {
+        "text": "Interrogate the necromancer",
+        "next": "ancient_temple"
+      },
+      {
+        "text": "Leave the village immediately",
+        "next": "ancient_temple"
+      }
+    ]
+  },
+  "mystic_merchant": {
+    "id": "mystic_merchant",
+    "title": "The Mystic Merchant",
+    "description": "A cloaked figure sits beside a flickering lantern in the abandoned house. His single, glowing eye peers at you. \n\n\"Gold for power, power for survival,\" he whispers. \"Choose wisely.\"",
+    "choices": [
+      {
+        "text": "Buy a healing potion (-30 gold)",
+        "next": "ancient_temple"
+      },
+      {
+        "text": "Buy a lightning spell (-50 gold)",
+        "next": "ancient_temple"
+      },
+      {
+        "text": "Ignore and move on",
+        "next": "ancient_temple"
+      }
+    ]
+  },
+  "ancient_temple": {
+    "id": "ancient_temple",
+    "title": "The Ancient Temple",
+    "description": "The mountains rise around you, enclosing a forgotten temple bathed in silver moonlight. Strange glyphs glow on the walls, pulsing with energy. You feel an inexplicable pull toward the entrance... as if something is waiting for you.",
+    "choices": [
+      {
+        "text": "Enter the temple",
+        "next": "final_battle"
+      }
+    ]
+  },
+  "final_battle": {
+    "id": "final_battle",
+    "title": "The Dark One\u2019s Return",
+    "description": "A swirling vortex of darkness erupts before you, revealing a towering figure cloaked in living shadows. The Dark One's voice is a whisper and a roar at once. \n\n\"You dare challenge me? Foolish mortal. You shall be the first of many to fall!\"",
+    "combat": {
+      "enemy": "Dark One",
+      "reward": {
+        "item": "Rebirth of Light",
+        "gold": 200
+      }
+    },
+    "choices": [
+      {
+        "text": "Use elemental magic",
+        "next": "good_ending_1"
+      },
+      {
+        "text": "Use forbidden spells",
+        "next": "bad_ending_1"
+      }
+    ]
+  },
+  "good_ending_1": {
+    "id": "good_ending_1",
+    "title": "The Light Prevails",
+    "description": "With the power of nature, fire, and storm, you channel raw energy into a single strike. The Dark One shrieks as light engulfs him, dissolving the darkness. The world is safe... for now.",
+    "choices": []
+  },
+  "bad_ending_1": {
+    "id": "bad_ending_1",
+    "title": "Corrupted by Power",
+    "description": "The forbidden spells pulse through your veins, intoxicating, overwhelming. The Dark One falls, but his power does not vanish\u2014it flows into you. Darkness has a new master... and the world trembles.",
+    "choices": []
+  }
+}
